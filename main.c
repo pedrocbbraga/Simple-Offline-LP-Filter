@@ -137,13 +137,13 @@ void writeFile(WAV* wav, const char* fileName)
 int main()
 {
     WAV wav = readFile("test.wav");
-    printf("OPENED FILE\n");
+    // printf("OPENED FILE\n");
 
     lowPass(&wav, cutOffFreq);
-    printf("LOW PASSED\n");
+    // printf("LOW PASSED\n");
 
     writeFile(&wav, "outputLP.wav");
-    printf("DONE OUTPUT\n");
+    // printf("DONE OUTPUT\n");
 
     free(wav.data);
     return 0;
